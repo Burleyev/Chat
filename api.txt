@@ -1,3 +1,51 @@
 GET /api/users  - получение списка пользователей
+
+Запрос: -
+
+Ответ: {
+    "users": [
+        {
+            "id": 3456,
+            "name": "Theodor"
+        },
+        {
+            "id": 456,
+            "name": "Anna"
+        },
+    ]
+}
+
 GET /api/messages - получение списка собщений
+
+Запрос: -
+
+Ответ: {
+    "messages": [
+        {
+            "user_name": "Theodor",
+            "send_time": "15.08.205 12:30",
+            "massage": "Hallo"
+        },
+        {
+             "user_name": "Anna",
+             "send_time": "15.08.205 13:30",
+             "massage": "Hallo"
+        },
+    ]
+}
+
 POST /api/messages - отправка сообщкний
+
+Запрос: TEXT
+
+Ответ: {
+    "result": true
+}
+
+Post /api/users - созлание пользывателя при логине
+
+Запрос: user_name
+
+Ответ: {
+    "result": true
+}
